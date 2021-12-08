@@ -39,7 +39,10 @@
 }
 
 .btn-default {
-  @include button-style($white, $gray-4, $body-color, $white, $primary, $primary)
+  @include button-style($white, $gray-4, $body-color, $white, $primary, $primary);
+  &:focus {
+    outline: 5px auto lighten($primary, 7.5%);
+  }
 }
 
 .btn-link {
