@@ -1,4 +1,5 @@
 import React from 'react'
+import Alert, { AlertType } from './components/Alert/alert';
 import Button, { ButtonType, ButtonSize } from './components/Button/button'
 
 function App() {
@@ -15,6 +16,12 @@ function App() {
         <Button btnType={ButtonType.Link} href="https://www.baidu.com"> Hello </Button>
         <Button btnType={ButtonType.Link} href="https://www.baidu.com"> Hello </Button>
         <Button btnType={ButtonType.Link} href="https://www.baidu.com" disabled> Hello </Button>
+        <hr />
+        <h2>Alert</h2>
+        <Alert title="success!" type={AlertType.Success} />
+        <Alert title="oh！Danger~" type={AlertType.Danger} description='这是危险的操作'/>
+        <Alert title="this is title" closable onClose={() => {console.log('回调：关闭了')}} />
+        <Alert title="this is title" type={AlertType.Warning} closable={false}/>
         <hr />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.

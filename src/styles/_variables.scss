@@ -185,7 +185,7 @@ $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 
 // 按钮
 // 按钮基本属性
-$btn-font-weight:             400;
+$btn-font-weight:             400 !default;
 $btn-padding-y:               .375rem !default;
 $btn-padding-x:               .75rem !default;
 $btn-font-family:             $font-family-base !default;
@@ -220,3 +220,28 @@ $btn-border-radius-lg:        $border-radius-lg !default;
 $btn-border-radius-sm:        $border-radius-sm !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// alert
+// alert基本属性
+$alert-padding-y:               0.75rem !default;
+$alert-padding-x:               1.25rem !default;
+$alert-font-family:             $font-family-base !default;
+$alert-line-height:             $line-height-base !default;
+$alert-width:                   30rem !default;
+
+// alert边框
+$alert-border-width:            $border-width !default;
+
+// alert标题属性
+$alert-title-font-weight:       700 !default;
+$alert-title-font-size:         $font-size-base !default;
+
+
+// alert描述属性
+$alert-desc-font-weight:        400 !default;
+$alert-desc-font-size:          $font-size-base * 0.875 !default;
+$alert-desc-margin-up:         0.3rem !default;
+
+// alert关闭按钮属性
+$alert-close-padding-y:         0.75rem !default;
+$alert-close-padding-x:         0.75rem !default;
